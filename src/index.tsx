@@ -5,6 +5,6 @@ import Main from './Main';
 ReactDOM.render(
   <React.StrictMode>
 		<Main />
-  </React.StrictMode>
-	document.getElementById('main'),
+  </React.StrictMode>,
+	document.getElementById('main')
 );

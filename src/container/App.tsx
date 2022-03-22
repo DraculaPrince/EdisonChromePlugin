@@ -8,6 +8,7 @@ import {
   Routes
 } from "react-router-dom";
 import { useStores } from './hooks/use-stores';
+import './assets/styles/Base.css';
 
 const App = () => {
   const { commonStore, userStore } = useStores();

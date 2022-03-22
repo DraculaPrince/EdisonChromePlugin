@@ -1,0 +1,16 @@
+:global(.search-form .ant-form-item) {
+	margin-bottom: 16px;
+}
+:global(.role .ant-upload-list-item-thumbnail) {
+	background: #444;
+}
+
+:global(.role .ant-image) {
+	padding: 8px;
+	background: #444;
+}
+
+:global(.role .ant-image-img) {
+	width: 24px;
+	height: 24px;
+}

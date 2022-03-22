@@ -5,5 +5,5 @@ export const getCheckLoginOaApi = () =>
 		"https://ehr.byd.com/hrms/self/calendarSchedule.do?actPara=listQuery"
 	);
 
-export const calcWorkPower = () =>
+export const getCalcWorkPowerApi = () =>
 	http.get("http://ehr.byd.com/hrms/self/kqcardls.do?actPara=queryKq");

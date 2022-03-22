@@ -5,7 +5,6 @@ import React from 'react';
 import { HashRouter as Router } from 'react-router-dom';
 import App from './container/App';
 import { publicStores } from './hooks/use-stores';
-import './index.css';
 import storesContext from './store';
 
 
