@@ -1,7 +1,7 @@
 import React from "react";
-import storesContext from "../store";
-import CommonStore from "../store/commonStore";
-import UserStore from "../store/userStore";
+import storesContext from "../stores";
+import CommonStore from "../stores/commonStore";
+import UserStore from "../stores/userStore";
 
 export const useStores = () => React.useContext(storesContext);
 

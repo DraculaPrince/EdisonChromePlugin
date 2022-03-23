@@ -11,7 +11,7 @@
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "module": "ESNext",
-    "moduleResolution": "Node",
+    "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
@@ -21,8 +21,12 @@
     "jsx": "react-jsx",
     "types": [
       "@types/chrome",
-    ]
+    ],
+    "typeRoots": [
+      "node_modules/@types"
+    ],
   },
+  "exclude": [ "node_modules" ],
   "include": ["./src"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

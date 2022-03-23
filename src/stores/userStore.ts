@@ -5,9 +5,9 @@ const UserStore = () => ({
 	checkLoginOaObj: {},
 	calcWorkPowerObj: {},
 
-	async getCheckLoginOa(data) {
+	async getCheckLoginOa() {
 		try {
-			const res = await getCheckLoginOaApi(data);
+			const res = await getCheckLoginOaApi();
 			if (res) {
 				runInAction(() => {
 					this.checkLoginOaObj = res;
@@ -18,12 +18,12 @@ const UserStore = () => ({
 		}
 	},
 
-	async getCalcWorkPower(data) {
+	async getCalcWorkPower() {
 		try {
-			const res = await getCalcWorkPowerApi(data);
+			const res = await getCalcWorkPowerApi();
 			if (res) {
 				runInAction(() => {
-					this.calcWorkPower = res;
+					this.calcWorkPowerObj = res;
 				});
 			}
 		} catch (err) {

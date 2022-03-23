@@ -1,13 +1,13 @@
 import { runInAction } from "mobx";
-import { getHitokotoApi, getWeatherApi } from "../apis/userApi";
+import { getHitokotoApi, getWeatherApi } from "../apis/commonApi";
 
 const CommonStore = () => ({
 	hitokotoObj: {},
 	weatherObj: {},
 
-	async getHitokoto(data) {
+	async getHitokoto() {
 		try {
-			const res = await getHitokotoApi(data);
+			const res = await getHitokotoApi();
 			if (res) {
 				runInAction(() => {
 					this.hitokotoObj = res;
@@ -18,12 +18,12 @@ const CommonStore = () => ({
 		}
 	},
 
-	async getWeather(data) {
+	async getWeather() {
 		try {
-			const res = await getWeatherApi(data);
+			const res = await getWeatherApi();
 			if (res) {
 				runInAction(() => {
-					this.weather = res;
+					this.weatherObj = res;
 				});
 			}
 		} catch (err) {

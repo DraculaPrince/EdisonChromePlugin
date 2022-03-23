@@ -5,12 +5,13 @@ import { observer } from 'mobx-react';
 import {
   // HashRouter as Router,
   Navigate, Route,
+  // RouteComponentProps, 
   Routes
-} from "react-router-dom";
-import { useStores } from './hooks/use-stores';
+} from 'react-router-dom';
+import { useStores } from '../hooks/use-stores';
 import './assets/styles/Base.css';
 
-const App = () => {
+const App:React.FC = () => {
   const { commonStore, userStore } = useStores();
   return (
     <>
